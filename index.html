@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Harshit Sanhotra | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">Harshit<span>.</span></a>
+
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#home"       class="nav-link active">Home</a></li>
+        <li><a href="#about"      class="nav-link">About</a></li>
+        <li><a href="#skills"     class="nav-link">Skills</a></li>
+        <li><a href="#projects"   class="nav-link">Projects</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#contact"    class="nav-link">Contact</a></li>
+        <li>
+          <a href="RESUME.pdf" download="Harshit_Sanhotra_Resume.pdf" class="btn-resume">
+            <i class="fas fa-download"></i> Resume
+          </a>
+        </li>
+      </ul>
+
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===== HERO SECTION ===== -->
+  <section id="home" class="hero">
+    <div class="hero-container">
+      <div class="hero-text">
+        <p class="hero-greeting">Hello, I'm</p>
+        <h1 class="hero-name">Harshit Sanhotra</h1>
+        <h2 class="hero-title">
+          <span id="typed-text"></span><span class="cursor">|</span>
+        </h2>
+        <p class="hero-desc">
+          Recent Computer Science graduate passionate about building secure,
+          intelligent systems. Experienced in Machine Learning, Cybersecurity,
+          and Full-Stack Development.
+        </p>
+        <div class="hero-btns">
+          <a href="https://www.linkedin.com/in/harshit-sanhotra-2a997224b" target="_blank" class="btn-primary">
+            <i class="fab fa-linkedin"></i> Connect with me
+          </a>
+          <a href="#projects" class="btn-outline">
+            View Projects <i class="fas fa-chevron-right"></i>
+          </a>
+        </div>
+        <div class="hero-socials">
+          <a href="https://github.com/harshitsanhotra"   target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/harshit-sanhotra-2a997224b" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+          <a href="mailto:harshitsanhotra17@gmail.com"   title="Email"><i class="fas fa-envelope"></i></a>
+          <a href="tel:+917876034390"                    title="Phone"><i class="fas fa-phone"></i></a>
+        </div>
+      </div>
+
+      <div class="hero-image">
+        <div class="image-glow"></div>
+        <img src="profile-photo.jpg" alt="Harshit Sanhotra" class="profile-img" />
+      </div>
+    </div>
+    <div class="scroll-down" onclick="scrollToSection('about')">
+      <i class="fas fa-chevron-down"></i>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT SECTION ===== -->
+  <section id="about" class="section section-light">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">About Me</h2>
+        <div class="section-line"></div>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-text fade-in">
+          <h3>Get to know me!</h3>
+          <p>
+            I'm a <strong>Computer Science graduate</strong> from Chandigarh University
+            with a passion for combining <strong>Artificial Intelligence</strong> and
+            <strong> Cybersecurity</strong> to build secure, intelligent systems.
+          </p>
+          <p>
+            During my internship at <strong>CDAC Mohali</strong>, I gained hands-on
+            experience in security automation, Docker containerization, and developing
+            ML-powered solutions. I love working on projects that challenge me to learn
+            new technologies and solve real-world problems.
+          </p>
+          <p>
+            I'm currently looking for opportunities where I can contribute my skills in
+            <strong> Machine Learning</strong>, <strong>Cybersecurity</strong>, and
+            <strong> Full-Stack Development</strong> while continuing to grow as a professional.
+          </p>
+        </div>
+
+        <div class="about-cards fade-in">
+          <div class="info-card">
+            <div class="card-icon"><i class="fas fa-graduation-cap"></i></div>
+            <div class="card-content">
+              <h4>Education</h4>
+              <p class="card-title">B.E. Computer Science & Engineering</p>
+              <p class="card-sub">Chandigarh University, Punjab</p>
+              <p class="card-detail">CGPA: 7.1 &nbsp;|&nbsp; May 2025</p>
+            </div>
+          </div>
+
+          <div class="info-card">
+            <div class="card-icon"><i class="fas fa-briefcase"></i></div>
+            <div class="card-content">
+              <h4>Experience</h4>
+              <p class="card-title">WBL Intern – Cyber Security</p>
+              <p class="card-sub">CDAC Mohali</p>
+              <p class="card-detail">Aug 2025 – Feb 2026</p>
+            </div>
+          </div>
+
+          <div class="info-card">
+            <div class="card-icon"><i class="fas fa-award"></i></div>
+            <div class="card-content">
+              <h4>Certifications</h4>
+              <p class="card-title">3 Professional Certificates</p>
+              <p class="card-sub">NPTEL IoT (Elite), Statistics, UI/UX</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SKILLS SECTION ===== -->
+  <section id="skills" class="section section-white">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">My Skills</h2>
+        <div class="section-line"></div>
+      </div>
+
+      <div class="skills-grid">
+
+        <div class="skill-card fade-in">
+          <div class="skill-top">
+            <i class="fab fa-python skill-icon"></i>
+            <span>Python</span>
+          </div>
+          <p class="skill-cat">Programming</p>
+          <div class="skill-bar"><div class="skill-fill" data-level="90"></div></div>
+          <span class="skill-pct">90%</span>
+        </div>
+
+        <div class="skill-card fade-in">
+          <div class="skill-top">
+            <i class="fas fa-code skill-icon"></i>
+            <span>C++</span>
+          </div>
+          <p class="skill-cat">Programming</p>
+          <div class="skill-bar"><div class="skill-fill" data-level="85"></div></div>
+          <span class="skill-pct">85%</span>
+        </div>
+
+        <div class="skill-card fade-in">
+          <div class="skill-top">
+            <i class="fas fa-brain skill-icon"></i>
+            <span>Machine Learning</span>
+          </div>
+          <p class="skill-cat">AI / ML</p>
+          <div class="skill-bar"><div class="skill-fill" data-level="88"></div></div>
+          <span class="skill-pct">88%</span>
+        </div>
+
+        <div class="skill-card fade-in">
+          <div class="skill-top">
+            <i class="fas fa-network-wired skill-icon"></i>
+            <span>Deep Learning</span>
+          </div>
+          <p class="skill-cat">AI / ML</p>
+          <div class="skill-bar"><div class="skill-fill" data-level="85"></div></div>
+          <span class="skill-pct">85%</span>
+        </div>
+
+        <div class="skill-card fade-in">
+          <div class="skill-top">
+            <i class="fas fa-shield-alt skill-icon"></i>
+            <span>Cyber Security</span>
+          </div>
+          <p class="skill-cat">Security</p>
+          <div class="skill-bar"><div class="skill-fill" data-level="85"></div></div>
+          <span class="skill-pct">85%</span>
+        </div>
+
+        <div class="skill-card fade-in">
+          <div class="skill-top">
+            <i class="fab fa-docker skill-icon"></i>
+            <span>Docker</span>
+          </div>
+          <p class="skill-cat">DevOps</p>
+          <div class="skill-bar"><div class="skill-fill" data-level="82"></div></div>
+          <span class="skill-pct">82%</span>
+        </div>
+
+        <div class="skill-card fade-in">
+          <div class="skill-top">
+            <i class="fab fa-linux skill-icon"></i>
+            <span>Linux</span>
+          </div>
+          <p class="skill-cat">Systems</p>
+          <div class="skill-bar"><div class="skill-fill" data-level="85"></div></div>
+          <span class="skill-pct">85%</span>
+        </div>
+
+        <div class="skill-card fade-in">
+          <div class="skill-top">
+            <i class="fab fa-html5 skill-icon"></i>
+            <span>HTML / CSS / JS</span>
+          </div>
+          <p class="skill-cat">Web Dev</p>
+          <div class="skill-bar"><div class="skill-fill" data-level="82"></div></div>
+          <span class="skill-pct">82%</span>
+        </div>
+
+        <div class="skill-card fade-in">
+          <div class="skill-top">
+            <i class="fab fa-react skill-icon"></i>
+            <span>React</span>
+          </div>
+          <p class="skill-cat">Web Dev</p>
+          <div class="skill-bar"><div class="skill-fill" data-level="80"></div></div>
+          <span class="skill-pct">80%</span>
+        </div>
+
+        <div class="skill-card fade-in">
+          <div class="skill-top">
+            <i class="fas fa-pencil-ruler skill-icon"></i>
+            <span>UI / UX Design</span>
+          </div>
+          <p class="skill-cat">Design</p>
+          <div class="skill-bar"><div class="skill-fill" data-level="80"></div></div>
+          <span class="skill-pct">80%</span>
+        </div>
+
+        <div class="skill-card fade-in">
+          <div class="skill-top">
+            <i class="fas fa-database skill-icon"></i>
+            <span>MySQL</span>
+          </div>
+          <p class="skill-cat">Database</p>
+          <div class="skill-bar"><div class="skill-fill" data-level="78"></div></div>
+          <span class="skill-pct">78%</span>
+        </div>
+
+        <div class="skill-card fade-in">
+          <div class="skill-top">
+            <i class="fab fa-git-alt skill-icon"></i>
+            <span>Git</span>
+          </div>
+          <p class="skill-cat">Tools</p>
+          <div class="skill-bar"><div class="skill-fill" data-level="85"></div></div>
+          <span class="skill-pct">85%</span>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROJECTS SECTION ===== -->
+  <section id="projects" class="section section-light">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Projects</h2>
+        <div class="section-line"></div>
+        <p class="section-sub">Here are some of my recent projects</p>
+      </div>
+
+      <div class="projects-grid">
+
+        <div class="project-card fade-in">
+          <div class="project-top">
+            <h3>Explainable Deep Learning for Cancer Detection</h3>
+            <a href="#" class="project-link" title="View Project"><i class="fas fa-external-link-alt"></i></a>
+          </div>
+          <p class="project-date"><i class="fas fa-calendar-alt"></i> Jan 2025 – Apr 2025</p>
+          <p class="project-desc">
+            Developed a deep learning framework for histopathological cancer detection
+            using CNN and Grad-CAM for visual explanations of model predictions.
+          </p>
+          <div class="project-tags">
+            <span>Python</span><span>TensorFlow</span><span>CNN</span><span>Grad-CAM</span>
+          </div>
+        </div>
+
+        <div class="project-card fade-in">
+          <div class="project-top">
+            <h3>AI-Based Smart Contract System</h3>
+            <a href="#" class="project-link" title="View Project"><i class="fas fa-external-link-alt"></i></a>
+          </div>
+          <p class="project-date"><i class="fas fa-calendar-alt"></i> Aug 2024 – Nov 2024</p>
+          <p class="project-desc">
+            Designed and deployed smart contracts to manage AI service delivery with
+            automated transactions and usage tracking on blockchain platforms.
+          </p>
+          <div class="project-tags">
+            <span>Blockchain</span><span>Smart Contracts</span><span>Python</span><span>Web3</span>
+          </div>
+        </div>
+
+        <div class="project-card fade-in">
+          <div class="project-top">
+            <h3>Restaurant Management Website</h3>
+            <a href="#" class="project-link" title="View Project"><i class="fas fa-external-link-alt"></i></a>
+          </div>
+          <p class="project-date"><i class="fas fa-calendar-alt"></i> 2024</p>
+          <p class="project-desc">
+            Built a full-featured responsive restaurant website with online ordering,
+            table booking system, and modern UI/UX principles.
+          </p>
+          <div class="project-tags">
+            <span>HTML</span><span>CSS</span><span>JavaScript</span><span>UI/UX</span>
+          </div>
+        </div>
+
+        <div class="project-card fade-in">
+          <div class="project-top">
+            <h3>Cyber Security Automation Tools</h3>
+            <a href="#" class="project-link" title="View Project"><i class="fas fa-external-link-alt"></i></a>
+          </div>
+          <p class="project-date"><i class="fas fa-calendar-alt"></i> 2025 – 2026</p>
+          <p class="project-desc">
+            Developed security automation scripts during CDAC internship focusing on
+            system hardening and Docker containerization.
+          </p>
+          <div class="project-tags">
+            <span>Python</span><span>Docker</span><span>Linux</span><span>Bash</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== EXPERIENCE SECTION ===== -->
+  <section id="experience" class="section section-white">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Experience</h2>
+        <div class="section-line"></div>
+      </div>
+
+      <div class="exp-wrapper">
+        <!-- Timeline -->
+        <div class="timeline fade-in">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <h3>WBL Intern – Cyber Security</h3>
+            <p class="exp-company"><i class="fas fa-building"></i> CDAC Mohali</p>
+            <p class="exp-date"><i class="fas fa-calendar"></i> August 2025 – February 2026</p>
+            <ul class="exp-list">
+              <li><i class="fas fa-chevron-right"></i> Gained hands-on experience with Linux systems and Docker containerization</li>
+              <li><i class="fas fa-chevron-right"></i> Developed Python scripts for security automation and system hardening</li>
+              <li><i class="fas fa-chevron-right"></i> Built front-end interfaces for security monitoring dashboards</li>
+              <li><i class="fas fa-chevron-right"></i> Worked with LLMs and prompt engineering for AI-powered security solutions</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Certifications -->
+        <div class="cert-section">
+          <h3 class="cert-heading">Certifications</h3>
+          <div class="cert-grid">
+
+            <div class="cert-card fade-in">
+              <i class="fas fa-certificate cert-icon"></i>
+              <h4>NPTEL – Introduction to IoT</h4>
+              <p>IIT / NPTEL &nbsp;|&nbsp; 2024</p>
+              <span class="cert-badge elite">Elite</span>
+            </div>
+
+            <div class="cert-card fade-in">
+              <i class="fas fa-certificate cert-icon"></i>
+              <h4>Probability and Statistics</h4>
+              <p>NPTEL &nbsp;|&nbsp; 2024</p>
+              <span class="cert-badge">Certified</span>
+            </div>
+
+            <div class="cert-card fade-in">
+              <i class="fas fa-certificate cert-icon"></i>
+              <h4>UI / UX Design</h4>
+              <p>Figma &nbsp;|&nbsp; 2024</p>
+              <span class="cert-badge">Certified</span>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT SECTION ===== -->
+  <section id="contact" class="section section-light">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Get In Touch</h2>
+        <div class="section-line"></div>
+        <p class="section-sub">
+          I'm currently looking for new opportunities. Whether you have a question
+          or just want to say hi, I'll try my best to get back to you!
+        </p>
+      </div>
+
+      <div class="contact-cards">
+        <a href="mailto:harshitsanhotra17@gmail.com" class="contact-card fade-in">
+          <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+          <h3>Email Me</h3>
+          <p>harshitsanhotra17@gmail.com</p>
+        </a>
+        <a href="tel:+917876034390" class="contact-card fade-in">
+          <div class="contact-icon"><i class="fas fa-phone"></i></div>
+          <h3>Call Me</h3>
+          <p>+91 7876034390</p>
+        </a>
+      </div>
+
+      <div class="contact-socials">
+        <a href="https://github.com/harshitsanhotra"   target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/harshit-sanhotra-2a997224b" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        <a href="mailto:harshitsanhotra17@gmail.com"   title="Email"><i class="fas fa-envelope"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <p>© 2026 <strong>Harshit Sanhotra</strong>. Designed & Developed with ❤️</p>
+    </div>
+  </footer>
+
+  <!-- Back to Top -->
+  <button id="back-top" title="Back to top"><i class="fas fa-arrow-up"></i></button>
+
+  <script src="script.js"></script>
+</body>
+</html>
